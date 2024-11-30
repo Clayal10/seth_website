@@ -1,0 +1,71 @@
+/*General attribute styling*/
+body{
+    background: #A8A8A8;
+    margin: 0;
+    padding: 0;
+}
+
+header h1{
+    text-align: center;
+}
+
+/*Non-index specific stying*/
+h1 span{
+    font-size: .5em;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/*Style for 101.html*/
+
+#oop_demo{
+    width: auto;
+    max-width: 40%;
+    height: 500px;
+    float: right;
+    margin-right: 5%;
+    border: 2px solid blue; /*Temporary*/
+    display: flex;
+    flex-direction: column;
+
+}
+#oop_demo h3{
+    height: 10%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#canvas{
+    width: 100%;
+    height: 80%;
+    border: 2px solid black;
+}
+#list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#list div{/*This is for the newly created divs*/
+
+}
+
+#demo_buttons{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+#add_button, #remove_button{
+    width: 30%;
+    height: 80%;
+    
+}
+
+
