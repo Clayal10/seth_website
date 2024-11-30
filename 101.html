@@ -14,15 +14,18 @@
         </header>
         <main>
             <div id="oop_demo">
-                <h3>Linked List Data Structure</h3>
+                <h3 id="warning">Linked List Data Structure</h3>
                 <div id="canvas">
                     <div id="list">
                         <!--We want list to be html elements here-->
                     </div>
                 </div>
                 <div id="demo_buttons">
-                    <button id="add_button">Add Node</button>
-                    <button id="remove_button">Remove Node</button>
+                    <button id="add_button" onclick="ll.add_node(); print_size(); check_bound()">Add Node</button>
+                    <button id="remove_button" onclick="ll.remove_node(); print_size(); check_bound()">Remove Node</button>
+                </div>
+                <div id="ll_info">
+                    <p>Size of the List: <span id="ll_print">0</span></p>
                 </div>
             </div>
         </main>
