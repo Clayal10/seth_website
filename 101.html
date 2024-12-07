@@ -13,7 +13,7 @@
             <h1>CS-101 <br><span>Introduction to Computer Science</span></h1>
         </header>
         <main>
-            <div id="main_text">
+            <div class="main_text">
                 <p>test</p>
             </div>
             <div id="oop_demo">
@@ -24,8 +24,8 @@
                     </div>
                 </div>
                 <div id="demo_buttons">
-                    <button id="add_button" onclick="ll.add_node(); print_size(); check_bound()">Add Node</button>
-                    <button id="remove_button" onclick="ll.remove_node(); print_size(); check_bound()">Remove Node</button>
+                    <button class="cond_buttons" onclick="ll.add_node(); print_size(); check_bound()"><span class="full_text">Push</span><span class="short_text">+</span></button>
+                    <button class="cond_buttons" onclick="ll.remove_node(); print_size(); check_bound()"><span class="full_text">Pop</span><span class="short_text">-</span></button>
                 </div>
                 <div id="ll_info">
                     <p>Size of the Stack: <span id="ll_print">0</span></p>
