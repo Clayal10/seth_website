@@ -11,29 +11,30 @@ body{
     
 }
 
-/*
-header{
-    background-color: white;
-    box-shadow: 3px 1px 1px black;
-    color: #282828;
-    top: 0;
-    left: 0;
-    position: relative;
-    max-width: 1200px;
-    height: 5em;
-}
-    */
 
 
 header h1{
     text-align: center;
     font-size: 3em;
 }
+h1 span{
+    font-size: .5em;
+    font-weight: normal;
+    font-style: italic;
+}
 /*Main will act as a wrapper for the items within, make them a row and the media query can make them a column for mobile use*/
 main{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top_content{
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
 .main_text{
@@ -52,10 +53,16 @@ main{
     box-shadow: 3px 1px 1px grey;
     border: .5px solid grey;
     padding: 1em;
-}
-.block_1{
     max-width: 600px;
 }
+.block_1{
+    font-size: 20px;
+}
+.block_2{
+    font-size: 16px;
+
+}
+
 .main_text ul{
     list-style: none;
     width: 100%;
@@ -80,14 +87,13 @@ a:hover{
 .main_text p{
     padding-left: 1em;
     padding-right: 1em;
-    font-size: 20px;
 }
 /*For pictures or media on the side*/
 .side_picture{
     width: 30%;
     max-width: 400px;
-    height: auto;
     background-color: white;
+    height: auto;
     margin: 1em;
     padding: 0.5em;
     box-shadow: 3px 1px 1px grey;
@@ -117,18 +123,37 @@ a:hover{
 #cv_button a:hover{
     color: black;
 }
-
-footer{
+/*This will be used for kind of the "main" content such as tables*/
+.bottom_content{
     background-color: white;
-    
+    margin: 1em;
+    box-shadow: 3px 1px 1px grey;
+    border: .5px solid grey;
+    padding: 1em;
+    width: 90%; 
+}
+#class_list{
+    padding: 0;
+}
+#class_list h2{
+    text-align: center;
+}
+#classes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1em;
+}
+#classes button{
+    font-size: 16px;
+    font-family: georgia;
+}
+#classes button span{
+    font-style: italic;
+    font-size: 12px;
 }
 
-/*Non-index specific stying*/
-h1 span{
-    font-size: .5em;
-    font-weight: normal;
-    font-style: italic;
-}
+
 
 /*****************
 Style for 101.html
@@ -224,14 +249,25 @@ Style for 101.html
     .full_text{
         display: none;
     }
-    main{
+    .top_content{
         flex-direction: column;
         align-items: center;
     }
-    #main_text, #oop_demo{
+    .block_1, .block_2, .side_picture{ /*I want to effect all children element of this flex container*/
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .main_text, #oop_demo{
         width: 90%;
         margin: auto;
         margin-top: 5%;
+    }
+    #classes{
+        flex-direction: column;
+        align-items: center;
+    }
+    #classes button{
     }
 }
 

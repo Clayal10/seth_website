@@ -85,7 +85,7 @@ function check_bound(){
             warned = true;
         }
     }else{
-        document.getElementById("warning").innerHTML = "Linked List Data Structure";
+        document.getElementById("warning").innerHTML = "Stack Data Structure";
         warned = false;
     }
 }
