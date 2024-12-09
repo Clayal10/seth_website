@@ -50,7 +50,7 @@ main{
 .block_1, .block_2{
     background-color: white;
     margin-left: 1em;
-    box-shadow: 3px 1px 1px grey;
+    box-shadow: 2px 5px 10px 3px #AAAAAA;
     border: .5px solid grey;
     padding: 1em;
     max-width: 600px;
@@ -96,7 +96,7 @@ a:hover{
     height: auto;
     margin: 1em;
     padding: 0.5em;
-    box-shadow: 3px 1px 1px grey;
+    box-shadow: 2px 5px 10px 3px #AAAAAA;
     border: .5px solid grey;
     display: flex;
     flex-direction: column;
@@ -114,6 +114,7 @@ a:hover{
     border: none;
     background-color: white;
     transition-duration: 0.4s;
+    font-family: georgia;
 }
 #cv_button:hover{
     background-color: #c9c9c9;
@@ -125,17 +126,17 @@ a:hover{
 }
 /*This will be used for kind of the "main" content such as tables*/
 .bottom_content{
-    background-color: white;
-    margin: 1em;
-    box-shadow: 3px 1px 1px grey;
-    border: .5px solid grey;
-    padding: 1em;
     width: 90%; 
 }
-#class_list{
-    padding: 0;
+.info_lists{
+    background-color: white;
+    margin: 1em;
+    box-shadow: 2px 5px 10px 3px #AAAAAA;
+    border: .5px solid grey;
+    padding: 1em;
+    padding-top: 0;
 }
-#class_list h2{
+.info_lists h2{
     text-align: center;
 }
 #classes{
@@ -147,10 +148,54 @@ a:hover{
 #classes button{
     font-size: 16px;
     font-family: georgia;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    transition-duration: 0.4s;
+}
+#classes button:hover{
+    background-color: #c9c9c9;
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+
 }
 #classes button span{
     font-style: italic;
     font-size: 12px;
+}
+
+/*Stying for the table*/
+table{
+    width: 100%;
+}
+/*1em will be 15 minutes*/
+.times{
+    text-align: center;
+    height: 6em;
+}
+
+#labs{
+    height: 12em;
+}
+tr th{
+    vertical-align: top;
+}
+tbody td{
+    text-align: center;
+    height: 6em;
+}
+.cs435, .cs253, .cs392{
+    height: 5em;
+    border: 1px solid black;
+}
+.cs101{
+    height: 4em;
+    border: 1px solid black;
+
+}
+.lab{
+    height: 11em;
+    border: 1px solid black;
 }
 
 
@@ -246,6 +291,9 @@ Style for 101.html
         display: inline-block;
         font-size: 2em;
     }
+    table .short_text{
+        font-size: 1em;
+    }
     .full_text{
         display: none;
     }
@@ -266,8 +314,6 @@ Style for 101.html
     #classes{
         flex-direction: column;
         align-items: center;
-    }
-    #classes button{
     }
 }
 
