@@ -324,6 +324,9 @@ Style for 101.html
     table .short_text{
         font-size: 1em;
     }
+    table{
+        font-size: 10px;
+    }
     .full_text{
         display: none;
     }
