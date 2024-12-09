@@ -182,20 +182,50 @@ tr th{
 }
 tbody td{
     text-align: center;
+    position: relative;
+}
+td div{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}   
+tbody tr{
     height: 6em;
 }
+
 .cs435, .cs253, .cs392{
     height: 5em;
-    border: 1px solid black;
+    background-color: #AAAAAA;
 }
 .cs101{
     height: 4em;
-    border: 1px solid black;
+    background-color: #AAAAAA;
 
 }
 .lab{
     height: 11em;
-    border: 1px solid black;
+    background-color: #AAAAAA;
+}
+.office_hour{
+    height: 6em;
+    background-color: #AAAAAA;
+}
+
+tr div{
+    margin-top: 0.5em;
+}
+tr div span{
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.1s linear, opacity 0.1s linear;
+    font-style: italic;
+    font-weight: bold;  
+}
+
+/*These hovers are to display the class location*/
+.cs435:hover > span, .cs101:hover > span, .cs392:hover > span, .cs253:hover > span, .lab:hover > span, .office_hour:hover > span{
+    visibility: visible;
+    opacity: 1;
 }
 
 
