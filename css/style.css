@@ -22,6 +22,9 @@ h1 span{
     font-weight: normal;
     font-style: italic;
 }
+h2{
+    text-align: center;
+}
 /*Main will act as a wrapper for the items within, make them a row and the media query can make them a column for mobile use*/
 main{
     display: flex;
@@ -139,13 +142,13 @@ a:hover{
 .info_lists h2{
     text-align: center;
 }
-#classes{
+.classes{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 1em;
 }
-#classes button{
+.classes button{
     font-size: 16px;
     font-family: georgia;
     border-radius: 5px;
@@ -153,13 +156,13 @@ a:hover{
     border: none;
     transition-duration: 0.4s;
 }
-#classes button:hover{
+.classes button:hover{
     background-color: #c9c9c9;
     transform: scale(1.05);
     transition-duration: 0.3s;
 
 }
-#classes button span{
+.classes button span{
     font-style: italic;
     font-size: 12px;
 }
@@ -227,6 +230,78 @@ tr div span{
     visibility: visible;
     opacity: 1;
 }
+/*Styling for the lists at the bottom*/
+#research_list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 20px;
+}
+#research_list li{
+    padding: .5em;
+}
+#publication_list{
+    margin-left: 5%;
+    margin-right: auto;
+    padding: 0;
+    width: 90%;
+}
+#publication_list li{
+    list-style: none;
+    margin-bottom: 1em;
+    background-color: #ededed;
+    padding: .5em;
+    box-shadow: 1px 5px 5px 3px #cccccc; 
+    border-radius: 12px;
+    transition-duration: .2s;
+}
+#publication_list li:hover{
+    box-shadow: 2px 5px 5px 3px #aaaaaa;
+    transition-duration: .2s; 
+
+}
+#publication_list a{
+    color: #445577;
+}
+
+/*Footer Styling*/
+#other_things{
+    text-align: center;
+    font-size: 24px;
+}
+
+/************************
+Style for non index sites
+*************************/
+.instructor_information span{
+    font-style: italic;
+    font-size: .8em;
+}
+.assignments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+.assignments a{
+    width: 100%;
+}
+.assignments button{
+    margin: .5em;
+    padding: 1em;
+    width: 100%;
+    font-size: 24px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    font-family: georgia;
+    transition-duration: .2s;
+}
+.assignments button:hover{
+    background-color: #DDDDDD;
+    transition-duration: .2s;
+}
 
 
 
@@ -259,7 +334,9 @@ Style for 101.html
     font-size: 1.5em;
     font-family: 'Times New Roman', Times, serif;
 }
-
+#oop_desc{
+    font-style: italic;
+}
 #canvas{
     width: 100%;
     height: 80%;
@@ -344,9 +421,12 @@ Style for 101.html
         margin: auto;
         margin-top: 5%;
     }
-    #classes{
+    .classes{
         flex-direction: column;
         align-items: center;
+    }
+    .assignments{
+        font-size: 16px;
     }
 }
 

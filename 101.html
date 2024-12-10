@@ -14,26 +14,59 @@
         </header>
         <main>
             <div class="top_content">
-            <div class="main_text">
-                <p>test</p>
-            </div>
-            <div id="oop_demo">
-                <h3 id="warning">Stack Data Structure</h3>
-                <div id="canvas">
-                    <div id="list">
-                        <!--We want list to be html elements here-->
+                <div class="main_text">
+                    <!--block_1 will be copied and pasted-->
+                    <div class="block_1">
+                        <h2>Instructor Information</h2>
+                        <ul class="instructor_information">
+                            <a href="https://isoptera.lcsc.edu/seth"><li>S. Seth long, Ph.D</li></a>
+                            <li>Office:<br><span>TJH 204</span></li>
+                            <li>E-mail:<br><span><a href="mailto:sslong@lcsc.edu">sslong@lcsc.edu</a></span></li>
+                            <li>Office Hours:<br><span>Monday 1:30-3:00<br>Thursday 10:30-12:00</span></li>
+                        </ul>
+                    </div>
+                    <div class="block_2">
+                        <p id="oop_desc">To the right is a demonstration of perhaps the most central idea in Computer Science.</p>
                     </div>
                 </div>
-                <div id="demo_buttons">
-                    <button class="cond_buttons" onclick="ll.add_node(); print_size(); check_bound()"><span class="full_text">Push</span><span class="short_text">+</span></button>
-                    <button class="cond_buttons" onclick="ll.remove_node(); print_size(); check_bound()"><span class="full_text">Pop</span><span class="short_text">-</span></button>
-                </div>
-                <div id="ll_info">
-                    <p>Size of the Stack: <span id="ll_print">0</span></p>
+                <div id="oop_demo">
+                    <h3 id="warning">Stack Data Structure</h3>
+                    <div id="canvas">
+                        <div id="list">
+                            <!--We want list to be html elements here-->
+                        </div>
+                    </div>
+                    <div id="demo_buttons">
+                        <button class="cond_buttons" onclick="ll.add_node(); print_size(); check_bound()"><span class="full_text">Push</span><span class="short_text">+</span></button>
+                        <button class="cond_buttons" onclick="ll.remove_node(); print_size(); check_bound()"><span class="full_text">Pop</span><span class="short_text">-</span></button>
+                    </div>
+                    <div id="ll_info">
+                        <p>Size of the Stack: <span id="ll_print">0</span></p>
+                    </div>
                 </div>
             </div>
+            <div class="bottom_content">
+                <div class="info_lists">
+                    <h2>Course Resources</h2>
+                    <div class="classes">
+                        <a href="https://isoptera.lcsc.edu/~seth/cs101/syllabus.pdf"><button>Course Syllabus</button></a>
+                        <a href="https://isoptera.lcsc.edu/~seth/cs101/F24cal.pdf"><button>Course Calendar</button></a>
+                        <a href="https://isoptera.lcsc.edu/~seth/cs101/notes"><button>Lecture Notes</button></a>
+                        <a href="https://isoptera.lcsc.edu/~seth/cs101/examples"><button>Examples from Class</button></a>
+                    </div>
+                </div>
+                <div class="info_lists">
+                    <h2>Assignment Details</h2>
+                    <div class="assignments">
+                        <a href="https://isoptera.lcsc.edu/~seth/cs101/spirals.html"><button>Technical Assignment</button></a>
+                        <a href="https://isoptera.lcsc.edu/~seth/cs101/pandp.html"><button>Presentation</button></a>
+                        <a id="pres_schedule" href="https://isoptera.lcsc.edu/~seth/cs101/porder.html"><button>(Schedule)</button></a>
+                        <a href="https://isoptera.lcsc.edu/~seth/cs101/bookreport.html"><button>Book Report</button></a>
+                    </div>
+                </div>
             </div>
         </main>
+        <!--This footer will likely be the exact same in the different pages-->
         <footer>
 
         </footer>    
