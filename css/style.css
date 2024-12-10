@@ -500,6 +500,17 @@ Syyle for CS253
 .class_turnins .info_lists button{
     font-size: 14px;
 }
+/************
+CS392 Styling
+************/
+#engine_video{
+    width: 30%;
+    background-color: #ccc;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0 0 5px 5px #ccc;
+
+}
 
 @media(max-width: 1200px){
     #form{
