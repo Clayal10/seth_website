@@ -22,6 +22,7 @@
                             <li>Office:<br><span>TJH 204</span></li>
                             <li>E-mail:<br><span><a href="mailto:sslong@lcsc.edu">sslong@lcsc.edu</a></span></li>
                             <li>Office Hours:<br><span>Monday 1:30-3:00<br>Thursday 10:30-12:00</span></li>
+                            <a href="http://linuxcommand.org/tlcl.php"><li>Class Textbook</li></a>
                         </ul>
                     </div>
                     <div class="block_2">
@@ -33,16 +34,73 @@
                     </div>
                 </div>
                 <div id="help_form">
-                    <form method="post" action="#">
-                        <label>*First Name</label>
+                    <h2>Help Form</h2>
+                    <p>Submit questions for peer assistance.<br>*Required Entry</p>
+                    <form id="form" method="POST" action="data/data.php">
+                        <label for="fname">*First Name:</label>
+                        <input id="fname" name="fname" required>
+                        <label for="lname">*Last Name:</label>
+                        <input id="lname" name="lname" required>
+                        <label for="email">*Email:</label>
+                        <input id="email" name="email" required>
+                        <label for="class_form">*Class:</label>
+                        <input id="class_form" name="class_form" required>
+                        <label>*Comments</label>
+                        <textarea name="comments" rows="2" cols="20" id="comments" required></textarea>
+                        <button id="form_submit" type="submit">Submit</button>
                     </form>
                 </div>
             </div>
             <div class="bottom_content">
+                <div class="info_lists">
+                    <h2>Course Resources</h2>
+                    <div class="classes">
+                        <a href="https://isoptera.lcsc.edu/~seth/cs253/syllabus.pdf"><button>Course Syllabus</button></a>
+                        <a href="https://isoptera.lcsc.edu/~seth/cs253/F24cal.pdf"><button>Course Calendar</button></a>
+                        <a href="https://isoptera.lcsc.edu/~seth/cs253/notes"><button>Lecture Notes</button></a>
+                        <a href="https://isoptera.lcsc.edu/~seth/cs253/examples"><button>Examples from Class</button></a>
+                    </div>
+                </div>
+                <div class="class_turnins">
+                    <div class="info_lists">
+                        <h2>Projects</h2>
+                        <div class="assignments">
+                            <div class="projects">
+                                <a href="https://isoptera.lcsc.edu/~seth/cs253/p1.html"><button>1 : Collecting System Information from C</button></a>
+                                <a href="https://isoptera.lcsc.edu/~seth/cs253/p2.html"><button>2 : Adding to the Shell</button></a>
+                                <a href="https://isoptera.lcsc.edu/~seth/cs253/p3.html"><button>3 : Creating a Daemon</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info_lists">
+                        <h2>Lab Assignments</h2>
+                        <div class="assignments">
+                            <a href=""><button>1 : Logging into Isoptera and running commands</button></a>
+                            <a href=""><button>2 : Using Grep and Pipes</button></a>
+                            <a href=""><button>3 : More with Grep and Files</button></a>
+                            <a href=""><button>4 : Shell Variables</button></a>
+                            <a href=""><button>5 : Software Development</button></a>
+                            <a href=""><button>6 : Using the Network</button></a>
+                            <a href=""><button>7 : Archiving and Such</button></a>
+                            <a href=""><button>8 : Grep and RegEx</button></a>
+                            <a href=""><button>9 : Practive with 'argv' and 'argc'</button></a>
+                            <a href=""><button>10 : Handing and Sending Signals</button></a>
+                            <a href=""><button>11 : Hosting Web Pages in Isoptera</button></a>
+                            <a href=""><button>12 : Practice with the Command Line</button></a>
+                            <a href=""><button>13 : More Practice</button></a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </main>
         <footer>
+            <div class="info_lists">
+                <a href="https://isoptera.lcsc.edu/~cshumaker/seth_website/"><button>Home</button></a>
+                <a href="https://isoptera.lcsc.edu/~cshumaker/seth_website/101.html"><button>CS101</button></a>
+                <a href="https://isoptera.lcsc.edu/~cshumaker/seth_website/392.html"><button>CS392</button></a>
+                <a href="https://isoptera.lcsc.edu/~cshumaker/seth_website/435.html"><button>CS435</button></a>
+            </div>
             
         </footer>
     </body>
