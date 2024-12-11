@@ -320,6 +320,7 @@ footer .info_lists{
     align-items: center;
     justify-content: space-around;
     padding: 1em;
+    flex-wrap: wrap;
 }
 footer .info_lists button{
     font-size: 20px;
@@ -335,10 +336,6 @@ footer .info_lists button:hover{
     background-color: #DDDDDD;
     transition-duration: .2s;
 }
-
-
-
-
 
 /*****************
 Style for 101.html
@@ -505,11 +502,14 @@ CS392 Styling
 ************/
 #engine_video{
     width: 30%;
-    background-color: #ccc;
+    background-color: white;
     margin: auto;
     padding: 10px;
     box-shadow: 0 0 5px 5px #ccc;
 
+}
+#git_command{
+    font-size: 12px;
 }
 
 @media(max-width: 1200px){
@@ -523,6 +523,12 @@ CS392 Styling
     }
     #form_submit{
         width: 50%;
+
+    }
+}
+@media(max-width: 100px){
+    .block_1, .block_2{
+        max-width: 400px;
     }
 }
 @media(max-width: 600px){
@@ -566,11 +572,21 @@ CS392 Styling
     footer .info_lists button{
         font-size: 16px;
     }
+    #help_form{
+        width: 80%;
+    }
     #help_form p{
         font-size: 12px;
     }
     #help_form h2{
         font-size: 1.5em;
+    }
+    #form_submit{
+        width: 90%;
+        font-size: 18px;
+    }
+    .class_turnins .info_lists button{
+        font-size: 10px;
     }
 }
 
