@@ -1,3 +1,4 @@
+<!--This Doesn't seem to work :/-->
 <html>
     <body>
         Welcome <?php echo $_POST["fname"]?><br>

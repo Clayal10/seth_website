@@ -505,11 +505,16 @@ CS392 Styling
     background-color: white;
     margin: auto;
     padding: 10px;
-    box-shadow: 0 0 5px 5px #ccc;
-
+    box-shadow: 0 0 5px 5px #AAA;
+    margin: 1em;
+    border: .5px solid grey;
 }
 #git_command{
     font-size: 12px;
+}
+video{
+    width: 100%;
+    height: auto;
 }
 
 @media(max-width: 1200px){
@@ -587,6 +592,9 @@ CS392 Styling
     }
     .class_turnins .info_lists button{
         font-size: 10px;
+    }
+    #engine_video{
+        width: 80%;
     }
 }
 
